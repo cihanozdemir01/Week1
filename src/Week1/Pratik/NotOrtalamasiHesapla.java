@@ -9,7 +9,7 @@ public class NotOrtalamasiHesapla {
     public static void main(String[] args) {
 
         Scanner input=new Scanner(System.in);
-        int Matematik,Fizik,Kimya, Turkce,Tarih,Muzik;
+        int Matematik,Fizik,Kimya,Turkce,Tarih,Muzik;
 
         // Sınav notları kullanıcıdan alınır.
         System.out.print("Matematik dersi notunu giriniz : ");
