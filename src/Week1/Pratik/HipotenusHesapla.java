@@ -8,7 +8,7 @@ public class HipotenusHesapla {
     public static void main(String[] args) {
 
         Scanner input=new Scanner(System.in);
-        double a,b,c,Sonuc;
+        double a,b,c,Toplam;
 
 // Kullanıcıdan veriler alınır.
 
@@ -19,12 +19,18 @@ public class HipotenusHesapla {
 
 // Girilen uzunlukların kareleri alınıp toplanır.
 
-        c=Math.pow(a,2) + Math.pow(b,2);
+        Toplam = Math.pow(a,2) + Math.pow(b,2);
 
 // Hipotenüsü elde etmek için de toplanan sayının karekökü alınır.
 
-        Sonuc = Math.sqrt(c);
+        c = Math.sqrt(Toplam);
 
-        System.out.print("Bu dik üçgenin hipotenüsü = " + Sonuc );
+// Tüm uzunlukları bilinen üçgenin alanı hesaplanır.
+
+        double ucgenCevresi = a + b + c;
+        double u = ucgenCevresi / 2;
+        double ucgenAlani = Math.sqrt(u*(u-a)*(u-b)*(u-c));
+
+        System.out.print("Üçgenin alanı = " + ucgenAlani );
     }
 }

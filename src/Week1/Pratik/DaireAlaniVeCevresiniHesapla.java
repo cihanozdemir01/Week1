@@ -7,8 +7,6 @@ dairenin alanını ve çevresini hesaplayan program. */
 public class DaireAlaniVeCevresiniHesapla {
     public static void main(String[] args) {
 
-// Sabit veri ve değişken tanımlaması yapılır.
-
         Scanner input = new Scanner(System.in);
         double r,daireAlani,daireCevresi;
         final double pi = 3.14;

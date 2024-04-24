@@ -8,29 +8,30 @@ import java.util.Scanner;
 public class KdvTutariHesapla {
     public static void main(String[] args) {
 
-    double kullaniciParasi, Tutar, kdvTutari;
-
     Scanner input=new Scanner(System.in);
+    double kullaniciParasi, Tutar, kdvTutari;
 
 // Kullanıcıdan veriler alınır.
 
     System.out.print("Lütfen tutar giriniz: ");
     kullaniciParasi = input.nextDouble();
 
-    if (kullaniciParasi>0 & kullaniciParasi<1000) {
+//Kullanıcının parası koşula bağlanarak tutarlar hesaplanır.
+
+        if (kullaniciParasi>0 & kullaniciParasi<1000) {
 
         Tutar = kullaniciParasi+kullaniciParasi * 0.18;
         kdvTutari = Tutar - kullaniciParasi;
 
-    } else {
+        } else {
 
         Tutar = kullaniciParasi+kullaniciParasi * 0.08;
         kdvTutari = Tutar - kullaniciParasi;
-    }
+        }
 
-        System.out.println("KDV'siz fiyat = " + kullaniciParasi);
-        System.out.println("KDV'li fiyat = " + Tutar);
-        System.out.println("KDV tutarı = " + kdvTutari);
+    System.out.println("KDV'siz fiyat = " + kullaniciParasi);
+    System.out.println("KDV'li fiyat = " + Tutar);
+    System.out.println("KDV tutarı = " + kdvTutari);
 
     }
 }

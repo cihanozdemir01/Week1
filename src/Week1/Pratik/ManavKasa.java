@@ -1,6 +1,4 @@
 package Week1.Pratik;
-import javax.xml.transform.Source;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 /* Kullanıcının manavdan almış olduğu ürünlerin kilogram
@@ -14,11 +12,15 @@ public class ManavKasa {
         double kiloArmut, kiloElma, kiloDomates, kiloMuz, kiloPatlican;
         double toplamTutar;
 
+// Fiyat değişkenlerine değerler atanır.
+
         fiyatArmut = 2.14;
         fiyatElma = 3.67;
         fiyatDomates = 1.11;
         fiyatMuz = 0.95;
         fiyatPatlican = 5.00;
+
+// Kullanıcıdan kilogram verileri alınır.
 
         System.out.print("Armut Kaç Kilo ? : ");
         kiloArmut = input.nextDouble();
@@ -30,6 +32,8 @@ public class ManavKasa {
         kiloMuz = input.nextDouble();
         System.out.print("Patlıcan Kaç Kilo ? : ");
         kiloPatlican = input.nextDouble();
+
+// Alınan veriler ile toplam tutar hesaplanır.
 
         toplamTutar = (fiyatArmut * kiloArmut) + (fiyatElma * kiloElma) +
                       (fiyatDomates * kiloDomates) + (fiyatMuz * kiloMuz) +
