@@ -5,8 +5,6 @@ import java.util.Scanner;
 sınav puanlarını kullanıcıdan alan ve ortalamalarını hesaplayıp
 ekrana bastıran program. */
 
-//TERNARY KULLAN
-
 public class NotOrtalamasiHesapla {
     public static void main(String[] args) {
 
@@ -14,7 +12,6 @@ public class NotOrtalamasiHesapla {
         int Matematik,Fizik,Kimya, Turkce,Tarih,Muzik;
 
         // Sınav notları kullanıcıdan alınır.
-
         System.out.print("Matematik dersi notunu giriniz : ");
         Matematik = input.nextInt();
         System.out.print("Fizik dersi notunu giriniz : ");
@@ -29,15 +26,12 @@ public class NotOrtalamasiHesapla {
         Muzik = input.nextInt();
 
         // Sınav notlarının ortalaması hesaplattırılır.
-
-        float notOrtalamasi = (float) (Matematik + Fizik + Kimya + Turkce + Tarih + Muzik)/6;
+        double notOrtalamasi = (double) (Matematik + Fizik + Kimya + Turkce + Tarih + Muzik)/6;
 
         // Sınıfı geçip geçmeme durumu not ortalaması sonucuna göre şarta bağlanır.
-        
-        if (notOrtalamasi > 60) {
-            System.out.println("Sınıfı Geçti");
-        } else {
-            System.out.println("Sınıfta Kaldı");
-        }
+        String sonuc = notOrtalamasi > 60 ? "Sınıfı Geçti" : "Sınıfta Kaldı";
+
+        System.out.println(sonuc);
+
     }
 }
