@@ -4,7 +4,7 @@ import java.util.Scanner;
 /* Kullanıcıdan dik kenarlarının uzunluğunu alan
  ve hipotenüsü hesaplayan program. */
 
-public class HipotenüsHesapla {
+public class HipotenusHesapla {
     public static void main(String[] args) {
 
         Scanner input=new Scanner(System.in);
