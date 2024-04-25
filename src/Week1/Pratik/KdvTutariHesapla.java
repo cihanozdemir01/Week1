@@ -4,20 +4,17 @@ import java.util.Scanner;
 /* Kullanıcıdan alınan para değerinin KDV'li fiyatını ve KDV tutarını hesaplayıp ekrana bastıran program.
  Eğer girilen tutar 0 ve 1000 TL arasında ise KDV oranı %18, tutar 1000 TL'den büyük ise KDV oranı %8 olarak
  KDV tutarı hesaplanır. */
-
 public class KdvTutariHesapla {
     public static void main(String[] args) {
 
     Scanner input=new Scanner(System.in);
     double kullaniciParasi, Tutar, kdvTutari;
 
-// Kullanıcıdan veriler alınır.
-
+    // Kullanıcıdan veriler alınır.
     System.out.print("Lütfen tutar giriniz: ");
     kullaniciParasi = input.nextDouble();
 
-//Kullanıcının parası koşula bağlanarak tutarlar hesaplanır.
-
+        //Kullanıcının parası koşula bağlanarak tutarlar hesaplanır.
         if (kullaniciParasi>0 & kullaniciParasi<1000) {
 
         Tutar = kullaniciParasi+kullaniciParasi * 0.18;
