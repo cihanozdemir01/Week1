@@ -19,6 +19,7 @@ public class KullaniciGirisi {
         if (girilenSifre == kullaniciSifre){
             System.out.println("Giriş gerçekleştirildi");
         } else {
+
             //Şifre hatalı ise bu blok çalışır ve şifre sıfırlama istenip istenmediği kullanıcıya sorulur.
             System.out.print("Şifrenizi yanlış girdiniz. Sıfırlamak ister misiniz? Yes(1)/No(2) = ");
             Scanner input2 = new Scanner(System.in);
@@ -32,14 +33,11 @@ public class KullaniciGirisi {
 
                 //Kullanıcıdan alınan yeni şifre, eski şifreden farklı ya da doğru sayısal rakamlar olana kadar döngü çalıştırılır.
                 while (yeniSifre == kullaniciSifre){
-
                    System.out.print("Şifre Oluşturulamadı (Eski şifrenizi ya da hatalı bir şifre girdiniz), lütfen başka şifre giriniz: ");
                    Scanner input4 = new Scanner(System.in);
                    yeniSifre = input4.nextInt();
                 }
-
                 System.out.println("Şifre oluşturuldu.");
-
             } else {
                 System.out.println("Sisteme giriş gerçekleştirilemedi.");
             }
