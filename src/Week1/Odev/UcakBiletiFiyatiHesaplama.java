@@ -25,7 +25,7 @@ public class UcakBiletiFiyatiHesaplama {
         //Uçuş mesafesi ve yolcu yaşının pozitif olması ile yolculuk tipinde 2 alternatiften birinin gerçekleşmesi durumu koşula bağlanır.
         if ((ucusMesafesi > 0 && yolcuYasi > 0) && (yolculukTipi == 1 || yolculukTipi == 2)) {
 
-            ////////////////////////////////             SENARYO 1                //////////////////////////////////
+            ///////////////////////////////             SENARYO 1                //////////////////////////////////
             //Yaş indiriminde yolcuya "<12" ise ücretin %50 oranında, "12< <24" ise ücretin %90 oranında, ">65" ise ücretin %70 oranında indirim uygulanacak.
             //Yolculuk tipi indirimi tek yön ise indirim yok. Gidiş dönüş ise %80 oranında indirim olacak. Ancak 2 bilet gibi düşünmek gerekiyor toplam tutarı bulurken.
             yasIndirimi = yolcuYasi < 12 ? (1 - yasIndirimOrani12) : yolcuYasi < 24 ? (1 - yasIndirimOrani1224) : yolcuYasi > 65 ? (1 - yasIndirimOrani65) : 1;
