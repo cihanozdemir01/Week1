@@ -3,12 +3,10 @@ import java.util.Scanner;
 
 /* Gidilen mesafeye (KM) göre taksimetre
 tutarını ekrana yazdıran program.  */
-
 public class TaksimetreProgrami {
     public static void main(String[] args) {
 
-// Sabit veriler tanımlanır ve kullanıcıdan ilgili veriler alınır.
-
+        // Sabit veriler tanımlanır ve kullanıcıdan ilgili veriler alınır.
         Scanner input = new Scanner(System.in);
         int minimumTutar=20;
         int acilisUcreti = 10;
@@ -18,12 +16,10 @@ public class TaksimetreProgrami {
         System.out.print("Lütfen gidilen mesafeyi (KM) giriniz : ");
         gidilenMesafe = input.nextDouble();
 
-// Gidilen mesafeye göre ücret hesaplanır.
-
+        // Gidilen mesafeye göre ücret hesaplanır.
         Ucret = gidilenMesafe * kilometreUcreti + acilisUcreti;
 
-// Kullanıcıya şarta bağlanan ifade ile toplam ödemesi gereken tutar gösterilir.
-
+        // Kullanıcıya şarta bağlanan ifade ile toplam ödemesi gereken tutar gösterilir.
         if (Ucret>20){
             System.out.print("Ödenmesi gereken tutar = " + Ucret +  " TL'dir.");
         } else {
