@@ -1,7 +1,7 @@
 package Week1.Pratik;
 import java.util.Scanner;
 
-/* Kullanıcıdan şifre isteyen, şifrenin doğruluğu denetleyen veS hatalı
+/* Kullanıcıdan şifre isteyen, şifrenin doğruluğu denetleyen ve hatalı
 ise yeni şifre oluşturulmasını sağlayan program. */
 public class KullaniciGirisi {
     public static void main(String[] args) {
