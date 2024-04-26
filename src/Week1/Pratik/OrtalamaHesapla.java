@@ -1,4 +1,4 @@
-package Week1;
+package Week1.Pratik;
 import java.util.Scanner;
 
 public class OrtalamaHesapla {
