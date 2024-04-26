@@ -14,7 +14,7 @@ public class SayilariSirala {
         System.out.print("3. sayıyı giriniz = ");
         c = input.nextInt();
 
-        //Sıralama işlemleri
+        //Sıralama işlemleri yapılır
         if ( a > b && b > c){
             System.out.println(a + ">" + b + ">" + c );
         } else if ( a > b && a > c ) {
