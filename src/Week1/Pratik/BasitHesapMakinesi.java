@@ -17,7 +17,7 @@ public class BasitHesapMakinesi {
         System.out.println("1-Toplama\n2-Çıkarma\n3-Bölme\n4-Çarpma");
         select=input.nextInt();
 
-        //Alınan işlem talebine göre toplama,çıkarma,bölme ya da çarpma işlemi gerçekleştirilir.
+        //Alınan işlem talebine göre toplama, çıkarma, bölme ya da çarpma işlemi gerçekleştirilir.
         switch (select){
             case 1:
                 System.out.println("Toplama işleminizin sonucu");
