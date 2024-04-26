@@ -31,7 +31,7 @@ public class KullaniciGirisi {
                 Scanner input3 = new Scanner(System.in);
                 newPassword = input3.nextLine();
 
-                //Kullanıcıdan alınan yeni şifre, eski şifreden farklı ya da doğru sayısal rakamlar olana kadar döngü çalıştırılır.
+                //Kullanıcıdan alınan yeni şifre,eski şifreden farklı ya da doğru sayısal rakamlar olana kadar döngü çalıştırılır.
                 while (newPassword.equals(userPassword)){
                    System.out.print("Şifre Oluşturulamadı (Eski şifrenizi ya da hatalı bir şifre girdiniz), lütfen başka şifre giriniz: ");
                    Scanner input4 = new Scanner(System.in);
