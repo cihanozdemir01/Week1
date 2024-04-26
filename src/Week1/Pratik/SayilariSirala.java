@@ -1,7 +1,7 @@
 package Week1.Pratik;
 import java.util.Scanner;
 
-// Kullanıcıdan alınan 3 sayıyı sıralayan program.
+// Kullanıcıdan alınan 3 sayıyı küçükten büyüğe sıralayan program.
 public class SayilariSirala {
     public static void main(String[] args) {
         int a,b,c;
