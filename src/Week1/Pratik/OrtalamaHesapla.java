@@ -1,6 +1,7 @@
 package Week1.Pratik;
 import java.util.Scanner;
 
+// 5 ders puanını kullanıcıdan alarak sınıf geçme durumunu değerlendiren program.
 public class OrtalamaHesapla {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
