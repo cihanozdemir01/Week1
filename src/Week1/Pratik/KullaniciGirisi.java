@@ -7,35 +7,35 @@ public class KullaniciGirisi {
     public static void main(String[] args) {
 
         // Değişken tanımlamaları ve kullanıcı şifre değişkenine atama yapılır.
-        int kullaniciSifre, yeniSifre, girilenSifre, Cevap;
-        kullaniciSifre = 1234;
+        String userPassword, newPassword, password, answer;
+        userPassword = "1234";
 
         //Kullanıcıdan şifre girişi istenir.
         Scanner input = new Scanner(System.in);
         System.out.print("Lütfen şifrenizi giriniz: ");
-        girilenSifre = input.nextInt();
+        password = input.nextLine();
 
         //Kullanıcının girdiği şifre ile sistemdeki kayıtlı şifre kontrol edilir.
-        if (girilenSifre == kullaniciSifre){
+        if (password.equals(userPassword)){
             System.out.println("Giriş gerçekleştirildi");
         } else {
 
             //Şifre hatalı ise bu blok çalışır ve şifre sıfırlama istenip istenmediği kullanıcıya sorulur.
             System.out.print("Şifrenizi yanlış girdiniz. Sıfırlamak ister misiniz? Yes(1)/No(2) = ");
             Scanner input2 = new Scanner(System.in);
-            Cevap = input2.nextInt();
+            answer = input2.nextLine();
 
             //Şifrenin değiştirilmesi isteniyorsa yeni şifre talebi yapılır.
-            if (Cevap == 1 ){
+            if (answer.equals("1")){
                 System.out.print("Lütfen yeni şifrenizi giriniz: ");
                 Scanner input3 = new Scanner(System.in);
-                yeniSifre = input3.nextInt();
+                newPassword = input3.nextLine();
 
                 //Kullanıcıdan alınan yeni şifre, eski şifreden farklı ya da doğru sayısal rakamlar olana kadar döngü çalıştırılır.
-                while (yeniSifre == kullaniciSifre){
+                while (newPassword.equals(userPassword)){
                    System.out.print("Şifre Oluşturulamadı (Eski şifrenizi ya da hatalı bir şifre girdiniz), lütfen başka şifre giriniz: ");
                    Scanner input4 = new Scanner(System.in);
-                   yeniSifre = input4.nextInt();
+                   newPassword = input4.nextLine();
                 }
                 System.out.println("Şifre oluşturuldu.");
             } else {
