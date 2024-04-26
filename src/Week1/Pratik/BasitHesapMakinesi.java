@@ -1,6 +1,7 @@
 package Week1.Pratik;
 import java.util.Scanner;
 
+//Kullanıcıdan alınan 2 sayıya göre toplama, çıkarma, bölme ya da çarpma işlemi gerçekleştiren program.
 public class BasitHesapMakinesi {
     public static void main(String[] args) {
         int n1,n2,select;
