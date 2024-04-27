@@ -11,7 +11,7 @@ public class ArtikYilHesapla {
         System.out.print("Yıl Giriniz : ");
         year = input.nextInt();
 
-        // Sayı 400'e tam bölünebiliyorsa artık yıldır. 4'e tam bölünüp 100'e tam bölünemiyorsa da artık yıldır.,
+        // Sayı 400'e tam bölünebiliyorsa artık yıldır.4'e tam bölünüp 100'e tam bölünemiyorsa da artık yıldır.,
         // Aksi durumda artık yıl değildir.
         if ( year % 400 == 0) {
             System.out.println( year + " Artık bir yıldır !");
