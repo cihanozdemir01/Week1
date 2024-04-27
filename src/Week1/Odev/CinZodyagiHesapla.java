@@ -12,7 +12,7 @@ public class CinZodyagiHesapla {
         System.out.print("Lütfen doğum tarihinizi giriniz : ");
         birthDate = input.nextInt();
 
-        // Çin Zodyağı hesabı için doğum tarihinin 12'ye bölümünden kalan bir değişkene atanır.
+        // Çin Zodyağı hesabı için doğum tarihinin 12'ye bölümünden kalan değişkene atanır.
         String burc = switch (birthDate % 12) {
             case 0 -> "Maymun";
             case 1 -> "Horoz";
