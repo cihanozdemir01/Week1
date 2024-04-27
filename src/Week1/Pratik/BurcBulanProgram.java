@@ -14,6 +14,10 @@ public class BurcBulanProgram {
         System.out.print("Doğduğunuz ay : ");
         month = input.nextInt();
 
+        if (month>12 || month<1) {
+            System.out.println("Hatalı giriş gerçekleştirdiniz");
+            System.exit(1);}
+
         System.out.print("Doğduğunuz gün : ");
         day = input.nextInt();
 
