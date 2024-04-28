@@ -14,7 +14,7 @@ public class Group_Pratice_Flight_Ticket_Final {
         int mesafe, yas, yolculukTipi;
         double birimFiyat = 0.10, toplamFiyat;
 
-//Kullanıcıdan giriş değerlerini alalım.
+        //Kullanıcıdan giriş değerlerini alalım.
         Scanner input = new Scanner(System.in);
         System.out.print("Mesafeyi giriniz (km)..: ");
         mesafe = input.nextInt();
