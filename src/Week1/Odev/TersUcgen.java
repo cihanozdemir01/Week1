@@ -12,8 +12,8 @@ public class TersUcgen {
 
         /* Ters üçgen oluştururken bir bağıntı bulmak gerekiyor. Burada da "2*(num-i)-1"
            bağıntısı bulunarak işlem gerçekleştirilmiştir. */
-        for (int i=1; i<=num; i++) {
-            for (int y=1; y<=2*(num-i)-1;y++) {
+        for (int i=0; i<num; i++) {
+            for (int y=0; y<2*(num-i)-1;y++) {
                 System.out.print("*");
             }
             System.out.println();
