@@ -11,16 +11,11 @@ public class BasamakToplama {
         Scanner input = new Scanner(System.in);
         System.out.print("Sayı giriniz : ");
         number = input.nextInt();
-        int tempNumber = number;
 
-        while ( tempNumber != 0){
-            tempNumber /= 10;
-        }
-        tempNumber=number;
-        while (tempNumber!=0){
-            digitValue = tempNumber % 10;
+        while (number!=0){
+            digitValue = number % 10;
             sumDigit=sumDigit+digitValue;
-            tempNumber/=10;
+            number/=10;
         }
         System.out.println(sumDigit);
     }
