@@ -1,4 +1,4 @@
-package Week1.Pratik;
+package Week1.Odev;
 import java.util.Scanner;
 
 // Kullanıcıdan alınan n sayıdan en büyük ve en küçük sayıyı bulan program.
