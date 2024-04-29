@@ -1,6 +1,7 @@
 package Week1.Pratik;
 import java.util.Scanner;
 
+// Kullanıcıdan alınan girdilerle banka hesabının yönetildiği atm projesi oluşturulmuştur.
 public class AtmProjesi {
     public static void main(String[] args) {
         String userName, password;
