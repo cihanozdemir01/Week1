@@ -1,6 +1,6 @@
 package Week1.Odev;
 
-// 1-100'e kadar olan sayıların içerisinde asal olanları bulan program..
+// 1-100'e kadar olan sayıların içerisinde asal olanları bulan program.
 public class AsalSayiBul {
     public static void main(String[] args) {
 
