@@ -4,7 +4,6 @@ package Week1.Odev;
 public class AsalSayiBul {
     public static void main(String[] args) {
 
-        int count=0;
         for(int num=2;num<=100;num++)
         {
             int check = 0;
@@ -16,13 +15,10 @@ public class AsalSayiBul {
                     break;
                 }
             }
-
             if(check==0)
             {
                 System.out.print(num+" ");
-                count++;
             }
         }
-
     }
 }
