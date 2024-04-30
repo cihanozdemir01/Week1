@@ -1,6 +1,7 @@
 package Week1.Pratik;
 import java.util.Scanner;
 
+// Kullanıcıdan int ve double türünde alınan verilerin dönüşümü yapılır.
 public class TypeCasting {
     public static void main(String[] args) {
 
@@ -17,6 +18,7 @@ public class TypeCasting {
         System.out.print("Tam Sayı : " + tamSayi + " - Ondalık Sayı : " + ondalikliSayi );
         System.out.println();
 
+        //Tip dönüşümleri (Type Casting) gerçekleştirilir.
         double donOndalikliSayi = tamSayi;
         int donTamSayi = (int) ondalikliSayi;
 
