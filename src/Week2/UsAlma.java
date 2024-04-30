@@ -21,13 +21,13 @@ public class UsAlma {
 
         // Kullanıcıdan sayı ve üs değerleri alınır.
         Scanner scan = new Scanner(System.in);
-        System.out.print("Sayıyı giriniz : ");
+        System.out.print("Taban değerini giriniz : ");
         int a = scan.nextInt();
 
-        System.out.print("Üssü giriniz : ");
+        System.out.print("Üs değerini giriniz : ");
         int b = scan.nextInt();
 
-        System.out.println(a + " sayısının " + b + ". üssü : "+ pow(a,b));
+        System.out.println("Sonuç : "+ pow(a,b));
 
     }
 }
