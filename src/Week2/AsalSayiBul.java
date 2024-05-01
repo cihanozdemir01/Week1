@@ -1,6 +1,7 @@
 package Week2;
 import java.util.Scanner;
 
+// Girilen sayının asal olup/olmadığını bulan program.
 public class AsalSayiBul {
     static String prime(int a){
 
