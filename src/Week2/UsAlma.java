@@ -5,17 +5,15 @@ import java.util.Scanner;
 
 public class UsAlma {
 
-    /* Kuulanıcıdan alınacak 2 değer fonksiyonda işleme girer.
-       Oluşturulan döngü kullanıcının girdiği üs değeri kadar döndürülür.
-       Her seferinde kullanıcının girdiği sayı değeri kendisi ile çarpılır.
-       Ve sayı bir sonuç değişkenine atanır. */
+    /*  Metot üs değeri 1 eksiltilerek tekrar çağırılır ve üs değeri sıfır olana
+        kadar çağırılır. Üs değeri 0 olunca 1 değeri döndürülür. Ve sırası ile
+        taban değeri ile çarpılarak sonuç elde edilir.*/
 
     static int pow(int a, int b){
-        int result=1;
-        for(int i=1; i<=b; i++){
-            result*=a;
+        if(b==0){
+            return 1;
         }
-        return result;
+        return a*pow(a,b-1);
     }
     public static void main(String[] args) {
 
@@ -23,7 +21,6 @@ public class UsAlma {
         Scanner scan = new Scanner(System.in);
         System.out.print("Taban değerini giriniz : ");
         int a = scan.nextInt();
-
         System.out.print("Üs değerini giriniz : ");
         int b = scan.nextInt();
 
