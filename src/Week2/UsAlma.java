@@ -7,7 +7,7 @@ public class UsAlma {
 
     /*  Metot üs değeri 1 eksiltilerek tekrar çağırılır ve üs değeri sıfır olana
         kadar çağırılır. Üs değeri 0 olunca 1 değeri döndürülür. Ve sırası ile
-        taban değeri ile çarpılarak sonuç elde edilir.*/
+        taban değeri ile çarpılarak sonuç elde edilir. */
 
     static int pow(int a, int b){
         if(b==0){
