@@ -4,6 +4,9 @@ import java.util.Scanner;
 // Girilen sayının asal olup/olmadığını bulan program.
 public class AsalSayiBul {
 
+    // Recursive metot oluşturulur. Sayı 2'den küçük olamaz.
+    // Divisor değişkeni 1'e eşitse sayı 2'dir ve asaldır.
+    // n değişkeninin modu 0 ise sayı asal değildir.
     static boolean isPrime(int n, int divisor) {
         if (n < 2)
             return false;
