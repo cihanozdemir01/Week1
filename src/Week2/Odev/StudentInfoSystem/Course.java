@@ -16,7 +16,6 @@ public class Course {
     void addTeacher(Teacher teacher){
         if (teacher.branch.equals(this.prefix)){
             this.teacher=teacher;
-
         }else{
             System.out.println("Öğretmen ve Ders bölümleri uyuşmuyor.");
         }
