@@ -24,7 +24,6 @@ public class NearestNumber {
             }
         }
 
-        // Sonuçları yazdır
         System.out.println("Girilen sayıdan küçük en yakın sayı: " + nearestSmaller);
         System.out.println("Girilen sayıdan büyük en yakın sayı: " + nearestLarger);
     }
