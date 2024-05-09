@@ -1,7 +1,6 @@
 package Week2;
 
 public class PalindromicWords {
-
     static boolean isPalindrome(String str){
         int i=0;
         int j=str.length()-1;
