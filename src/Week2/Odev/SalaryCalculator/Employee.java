@@ -13,7 +13,6 @@ public class Employee {
         this.hireYear=hireYear;
     }
     public double tax(){
-
         if (this.salary>1000){
             return this.salary*0.03;
         } else {
