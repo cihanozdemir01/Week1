@@ -1,4 +1,4 @@
-package Week3.BitirmeProjesi;
+package Private.BitirmeProjesi.MineSweeper;
 
 public class Main {
     public static void main(String[] args) {

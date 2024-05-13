@@ -1,4 +1,4 @@
-package Week3.BitirmeProjesi;
+package Private.BitirmeProjesi.MineSweeper;
 import java.util.Scanner;
 import java.util.Random;
 
